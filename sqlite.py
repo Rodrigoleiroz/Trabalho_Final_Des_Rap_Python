@@ -3,10 +3,10 @@ import sqlite3
 connection = sqlite3.connect("./mydatabase.db")
 tabela = connection.cursor();
 
-# tabela.execute("""CREATE TABLE dados (nome, rg, cpf, data_nasc)""")
+tabela.execute("""CREATE TABLE dados (nome, rg, cpf, data_nasc)""")
 
-# tabela.execute("INSERT INTO dados VALUES"
-# "('Leila', '00352', '23456787688', '24/09/1989')")
+tabela.execute("INSERT INTO dados VALUES"
+"('Leila', '00352', '23456787688', '24/09/1989')")
 
 connection.commit()
 
